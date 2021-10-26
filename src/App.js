@@ -7,6 +7,8 @@ import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 import queryString from 'query-string'
 import PostFiltesForm from './components/PostFiltersForm';
+import UploadAvatar from './components/UploadAvatar';
+import ContentLesson from './components/ContentLesson';
 
 function App() {
   const [todoList,setTodoList] = useState([
@@ -76,6 +78,8 @@ function App() {
   return (
     <div className="App">
       <h1>Quang Khai ptit</h1>
+      <UploadAvatar />
+      <ContentLesson />
       <PostFiltesForm onSubmit={handleFiltersChange} />
       <PostList posts={postList} />
       <Pagination pagination= {pagination} onChangePage={handlePageChange} />
