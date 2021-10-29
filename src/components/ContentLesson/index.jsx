@@ -5,7 +5,7 @@ ContentLesson.propTypes = {
 
 };
 
-function ContentLesson(props) {
+function ContentLesson() {
     const listLessons = [
         {
             id: 1,

@@ -25,7 +25,7 @@ function TodoForm(props) {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" value={value} onChange={handleOnChange} />
+            <input type="text" value={value} onChange={handleOnChange} placeholder='Tìm kiếm'/>
         </form>
     );
 }

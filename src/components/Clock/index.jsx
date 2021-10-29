@@ -8,7 +8,7 @@ function Clock() {
     
     return (
         <div className='Clock'>
-            <button onClick={() => setShowClock(!showClock)}>Toggle Clock</button>
+            <button onClick={() => setShowClock(!showClock)}>Xem Đồng Hồ</button>
             {showClock && <h1>{time}</h1>}
         </div>
     );

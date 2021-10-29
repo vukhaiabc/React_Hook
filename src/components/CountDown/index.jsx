@@ -25,7 +25,7 @@ function CountDown(props) {
     }
     return (
         <div>
-            <h1>{count} - {preCount.current}</h1>
+            <h1>{count}</h1>
             <button className='btn btn-start'
                 onClick={handleButtonStart}
             >Start</button>

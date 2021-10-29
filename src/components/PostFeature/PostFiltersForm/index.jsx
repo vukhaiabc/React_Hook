@@ -33,6 +33,7 @@ function PostFiltesForm(props) {
             <input type="text" 
             value = {searchTerm}
             onChange = {handleChange}
+            placeholder='Tìm kiếm bài viết'
             />
         </form>
     );
