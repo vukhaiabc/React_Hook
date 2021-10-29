@@ -9,6 +9,12 @@ import queryString from 'query-string'
 import PostFiltesForm from './components/PostFiltersForm';
 import UploadAvatar from './components/UploadAvatar';
 import ContentLesson from './components/ContentLesson';
+import Clock from './components/Clock';
+import BetterClock from './components/BetterClock';
+import GetCourses from './components/GetAPI';
+import CountDown from './components/CountDown';
+import MagicBox from './components/MagicBox';
+import { Route, Switch } from 'react-router';
 
 function App() {
   const [todoList,setTodoList] = useState([
@@ -77,8 +83,16 @@ function App() {
   }
   return (
     <div className="App">
-      <h1>Quang Khai ptit</h1>
+      <Switch>
+        <Route ></Route>
+      </Switch>
+      <h1>Quang Khai PTIT</h1>
       <UploadAvatar />
+      {/* <GetCourses /> */}
+      <MagicBox />
+      <CountDown />
+      <Clock />
+      <BetterClock />
       <ContentLesson />
       <PostFiltesForm onSubmit={handleFiltersChange} />
       <PostList posts={postList} />
