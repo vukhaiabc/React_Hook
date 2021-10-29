@@ -23,7 +23,7 @@ function ColorBox() {
         style = {{backgroundColor:color}}
         onClick = {handleBoxClick}
         >
-            COLOR BOX
+            
         </div>
     );
 }
